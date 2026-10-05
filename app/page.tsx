@@ -245,7 +245,7 @@ export default function Home() {
 								href="/resume.pdf"
 								download
 							>
-								Download résumé{" "}
+								Download resume{" "}
 								<span aria-hidden="true">↓</span>
 							</a>
 						</div>
@@ -286,7 +286,7 @@ export default function Home() {
 					</h2>
 					<div className="about-text">
 						<p>
-							I&apos;m a Front-End Engineer with 8+ years of
+							I&apos;m a Front-End Developer with 8+ years of
 							experience creating responsive websites, web
 							applications, and mobile interfaces. Today, I work
 							across the stack with Next.js, NestJS, and
@@ -536,7 +536,7 @@ export default function Home() {
 						<div className="footer-links">
 							<a href="tel:+959250686687">+95 9 250 686 687</a>
 							<a href="/resume.pdf" download>
-								Résumé ↓
+								Resume ↓
 							</a>
 							<a href="#home">Back to top ↑</a>
 						</div>
