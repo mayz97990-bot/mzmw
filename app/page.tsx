@@ -1,4 +1,5 @@
 import { ThemeToggle } from "../components/ThemeToggle";
+import Image from "next/image";
 
 const projects = [
 	{
@@ -113,9 +114,6 @@ const stackGroups = [
 	[
 		"State & UI",
 		[
-			"Redux",
-			"Zustand",
-			"Tailwind CSS",
 			"SCSS",
 			"Responsive Design",
 			"Figma",
@@ -252,16 +250,29 @@ export default function Home() {
 					</div>
 
 					<aside className="hero-aside" aria-label="Career summary">
-						<div className="hero-stat">
-							<strong>08+</strong>
-							<span>years building for the web</span>
+						<div className="hero-portrait">
+							<Image
+								src="/images/may-zin-mar-win.jpg"
+								alt="May Zin Mar Win, Senior Front-End Developer"
+								width="1152"
+								height="1536"
+								sizes="(min-width: 960px) 280px, (min-width: 640px) 220px, 42vw"
+								priority
+							/>
+							<span aria-hidden="true">M / W</span>
 						</div>
-						<div className="hero-now">
-							<span>Currently</span>
-							<p>
-								Full-Stack Developer at O-Technique
-								International Myanmar
-							</p>
+						<div className="hero-aside-details">
+							<div className="hero-stat">
+								<strong>08+</strong>
+								<span>years building for the web</span>
+							</div>
+							<div className="hero-now">
+								<span>Currently</span>
+								<p>
+									Full-Stack Developer at O-Technique
+									International Myanmar
+								</p>
+							</div>
 						</div>
 					</aside>
 				</div>
@@ -354,7 +365,7 @@ export default function Home() {
 						>
 							<div className="project-visual">
 								{project.image ? (
-									<img
+									<Image
 										src={project.image}
 										alt={project.imageAlt}
 										width="1200"
@@ -538,7 +549,10 @@ export default function Home() {
 							<a href="/resume.pdf" download>
 								Resume ↓
 							</a>
-							<a href="#home">Back to top ↑</a>
+							<a className="back-to-top" href="#home">
+								<span>Back to top</span>
+								<b aria-hidden="true">↑</b>
+							</a>
 						</div>
 						<p className="copyright">© 2026 May Zin Mar Win</p>
 					</footer>

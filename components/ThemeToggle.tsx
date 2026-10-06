@@ -18,7 +18,8 @@ export function ThemeToggle() {
       aria-label="Toggle light and dark mode"
       title="Toggle light and dark mode"
     >
-      <span aria-hidden="true">◐</span>
+      <span className="theme-icon theme-icon--sun" aria-hidden="true">☀</span>
+      <span className="theme-icon theme-icon--moon" aria-hidden="true">☾</span>
     </button>
   );
 }
